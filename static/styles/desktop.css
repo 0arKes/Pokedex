@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media (min-width: 600px) {
+    .poke-character{
+        min-width: 7.5rem;
+        color: black;
+        margin: 4% 0;
+        padding: 8%;
+        border-radius: 15px 5px;
+        border: 2px solid #2D4B63;
+        background-color: #FCFCFC;
+        text-align: center;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.555);
+    }
+    .poke-atribut{
+        order: 3;
+        display: block;
+        margin: 12% 1% 0 5%;
+    }
+}

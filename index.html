@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/styles/root.css">
+    <link rel="stylesheet" href="./static/styles/reset.css">
+    <link rel="stylesheet" href="./static/styles/desktop.css">
+    <link rel="stylesheet" href="./static/styles/midle.css">
+    <link rel="stylesheet" href="./static/styles/mobile.css">
+    <link rel="stylesheet" href="./static/styles/type.css">
+    <title>Pokedéx</title>
+</head>
+<body>
+    <div hidden class="move-bar">
+        <button class="backward">&lt;</button>
+        <form hidden class="form">
+            <input type="search" name="poke-search" class="poke-search" placeholder="Pokemon/ID" required>
+        </form>
+        <button class="forward">&gt;</button>
+    </div>
+    
+    <main>
+        <div class="poke-id">
+            <h1 id="id"></h1>
+            <h2 id="name"></h2>
+        </div>
+        <div id="poke-type">
+            <p id="type1">Normal</p>
+            <p hidden id="type2" class="">Normal</p>
+        </div>
+        <div class="poke-main">
+            <div class="poke-info">
+                <p id="height"><strong>Altura: </strong> 00M</p>
+                <p id="weight"><strong>Peso: </strong> 00KG</p>
+            </div>
+            <div class="poke-img">
+                <img id="img" src="./static/img/none.png" alt="Imagem do Pokemon">
+            </div>
+            <div hidden class="poke-atribut">
+                <p class="poke-character" id="hp"><strong>HP:</strong> 00</p>
+                <P class="poke-character" id="atq"><strong>ATQ:</strong> 00</P>
+                <P class="poke-character" id="def"><strong>DEF:</strong> 00</P>
+                <P class="poke-character" id="spe"><strong>VEL:</strong> 00</P>
+            </div>
+            
+        </div>
+    </main>
+    <script src="./static/JS/main.js" defer></script>
+</body>
+</html>

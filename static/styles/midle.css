@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@media (min-width: 400px) {
+    html, body {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        color: white;
+    }
+    main{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .poke-id{
+        margin: 3% 0 3% 5%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: start;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.397);
+    }
+    h1{
+        font-size: clamp(3rem, 6vw, 5.5rem);
+    }
+    h2{
+        font-size: clamp(2rem, 4vw, 4.5rem);
+    }
+    .poke-main{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: start;
+        justify-content: space-around;
+    }
+    .poke-img{
+        order: 1;
+    }
+    .poke-info{
+        min-width: 120px;
+        margin: 2% 0 0 0;
+        order: 0;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.397);
+    }
+    #poke-type{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+    #poke-type > p{
+        margin: 1.5% 1.7%;
+        font-size: 1.2rem;
+        -webkit-filter: brightness(1.5);
+        filter: brightness(1.5);
+        padding: 1.5%;
+        border-radius: 20px;
+        color: black;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.555);
+        border: 1px solid #000000;
+        text-transform: capitalize;
+    }
+    img{
+        height: 15rem;
+    }
+    .move-bar{
+        margin-top: 4%;
+        margin-bottom: 8%;
+        display: block;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+    }
+    .move-bar > button{
+        background-color: #444;
+        color: #fff;
+        width: 50%;
+        border: 2px solid #000;
+        margin: 0 10%;
+        font-weight: 900;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        box-shadow: 3px 3px 1px #000;
+    }
+    .move-bar > button:active{
+        box-shadow: inset -4px -4px 0 #222;
+    }
+    form{
+        width: 100%;
+        display: block;
+    }
+    .poke-search{
+        width: 100%;
+        padding: 4%;
+        outline: none;
+        border: 2px solid #000;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+}
