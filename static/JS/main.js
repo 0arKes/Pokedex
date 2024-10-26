@@ -41,7 +41,11 @@ const Render = async (pokemon) =>{
         pokeId.innerHTML = `#${data.id}`;
         pokeHeight.innerHTML = `<strong>Altura: </strong> ${data.height/10} M`;
         pokeWeight.innerHTML = `<strong>Peso: </strong> ${data.weight/10} Kg`;
-        pokeImage.src = data["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
+        if (data["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"]){
+            pokeImage.src = data["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
+        }else{
+            pokeImage.src = "./static/img/none.png"
+        }
         pokeType1.innerHTML = data["types"]["0"]["type"]["name"];
         pokeType(data["types"]["0"]["type"]["name"]);
         hp.innerHTML = `<strong>HP: </strong>${data["stats"]["0"]["base_stat"]}`;
