@@ -38,7 +38,6 @@
         <li><a href="https://0arkes.github.io/Pokedex/" target="_blank">Clique aqui</a></li>
         <li>Insira o nome ou número do Pokémon que deseja visualizar.</li>
         <li>Ou use os botões &gt; e &lt; para avançar ou regredir respectivamente entre os pokemons</li>
-        Explore informações e características sobre cada Pokémon.
         <li>Explore as informações consumidas da api sobre cada Pokémon</li>
     </ol>
 </p>
