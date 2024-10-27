@@ -141,7 +141,6 @@ const pokeType = (type, where=0) =>{
         }
 
     }else{
-        console.log(type)
         switch (type){
             case "grass":
                 pokeType2.classList.add("type-grass");
